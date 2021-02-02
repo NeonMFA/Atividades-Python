@@ -3,15 +3,17 @@
 from random import randrange
 
 count = 0
-par = False
+par = True
 while True:
     num = int(input('Escolha um Número: '))
     escolha = str(input('Escolha Par ou Impar: [I/P] '))
     bot = randrange(1, 10)
     soma = num + bot
-    print(f'A Maquina Escolheu {bot}, e a Soma foi {soma}')
+    print(soma)
     if soma % 2 == 0:
-        par == True
+        par = True
+    else:
+        par = False
     if par and escolha == 'p' or par == False and escolha == 'i':
         print('Você Ganhou')
     else:
