@@ -9,7 +9,7 @@ while True:
     escolha = str(input('Escolha Par ou Impar: [I/P] '))
     bot = randrange(1, 10)
     soma = num + bot
-    print(soma)
+    print(f'A Maquina Escolheu {bot}, e a Soma foi {soma}')
     if soma % 2 == 0:
         par = True
     else:
