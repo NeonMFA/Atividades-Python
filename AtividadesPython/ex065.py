@@ -1,18 +1,16 @@
 #Mostra a Media, o Maior Valor, e o Menor dos Números Digitados
 
-num = 1
-media = 0
-maior = 0
-menor = 0
-count = 0
-while not num == 0:
+num = media = maior = menor = count = 0
+resp = ''
+
+while resp != 'n':
     num = int(input('Escreva um Número: [Digite 0 para Parar]: '))
     count += 1
     media += num
-    if count == 1:
-        menor = num
-    elif num > maior:
+    resp = str(input('Você quer continuar? [S/N] '))
+    if num > maior:
         maior = num
-    elif menor > num > 0:
+    if num < menor or count == 1:
         menor = num
-print(f'Foram {count} Números, A Media foi {media / 2}, o Menor Valor foi {menor}, e o Maior foi {maior}')
+
+print(f'foram {count} números, a media foi {media / count}, o menor foi {menor}, e o maior foi {maior}')
