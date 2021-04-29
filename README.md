@@ -1,2 +1,1 @@
-# Atividades Python
- Um Conjunto de Atividades feitas em Python
+some exercises that I did
