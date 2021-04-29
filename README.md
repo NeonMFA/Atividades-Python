@@ -1,1 +1,1 @@
-some exercises that I did
+some exercises that I solved
